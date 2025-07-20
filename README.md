@@ -18,7 +18,7 @@ GOALIE is a browser extension (designed for Chromium) that simulates real-time f
 ---
 ### 📊 System Pipeline Diagram
 
-![GOALIE Pipeline](model\results\pipeline.png)
+![GOALIE Pipeline](model/results/pipeline.png)
 
 ## Tech Stack
 
