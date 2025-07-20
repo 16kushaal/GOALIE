@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- CONFIGURATION ---
-    const GEMINI_API_KEY = 'AIzaSyBevioEttPcT5S0Djz3C7jA-78enZaCNV8'; // 🔥 IMPORTANT: Add your Gemini API key here
+    const GEMINI_API_KEY = 'ADD_YOUR_GEMINI_API_HERE'; // 🔥 IMPORTANT: Add your Gemini API key here
     const FLASK_LOG_URL = 'http://127.0.0.1:5000/classify_and_log'; // URL to send commentary for logging
     const SIMULATION_SPEED_MS = 4500;
 
