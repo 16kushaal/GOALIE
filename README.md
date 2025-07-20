@@ -214,6 +214,6 @@ Made with ⚽ and 💻 by [@16kushaal](https://github.com/16kushaal)
 
 ## 📄 License
 
-MIT License. See `LICENSE` for more information.
+Apache-2.0 license. See `LICENSE` for more information.
 
 ---
