@@ -1,6 +1,6 @@
 # ⚽ GOALIE – Game-Observations-Analysis-via-Linguistic-Information-Extraction
 
-> **Real-Time Match Insights from Commentators Narration – All in Your Browser.**
+ **Real-Time Match Insights from Commentators Narration – All in Your Browser.**
 
 GOALIE is a browser extension (designed for Chromium) that simulates real-time football match updates, complete with AI-powered snippet generation, tactical commentary classification, and interactive match displays. It features a sleek UI and integrates with a Flask-based backend that talks to a Gradio-hosted classifier.
 
@@ -16,6 +16,9 @@ GOALIE is a browser extension (designed for Chromium) that simulates real-time f
 * 🌙 **Dark Themed UI** with smooth animations and responsive layout
 
 ---
+### 📊 System Pipeline Diagram
+
+![GOALIE Pipeline](model\results\pipeline.png)
 
 ## Tech Stack
 
@@ -26,6 +29,50 @@ GOALIE is a browser extension (designed for Chromium) that simulates real-time f
 | Backend      | Python, Flask, Flask-CORS                                        |
 | AI/NLP       | Hugging Face Transformers (via Gradio client)                    |
 | Hosting      | Local Flask server + Gradio space endpoint                       |
+
+---
+## Model Benchmarking & Evaluation
+
+GOALIE classifies football commentary into 3 categories — `CURRENT`, `PAST`, and `IRRELEVANT` — using supervised NLP techniques.
+
+---
+
+### Dataset
+
+- **Source:** [SoccerNet-Echoes (whisper_v3/en)](https://huggingface.co/datasets/SoccerNet/SN-echoes/viewer/whisper_v3/en)
+- **Processed version:** `football_commentary_balanced.csv` (balanced to 50,000 samples/class)
+- **Final shape:** 149,981 samples
+- **Columns:** `game`, `text`, `label`
+
+> Used only English commentary. Filtered and balanced across the 3 label classes.
+
+---
+
+### Top 10 Model Combinations
+
+| Rank | Model               | Vectorizer          | Accuracy | F1 Score | CV Score (±std) | Time (s) |
+|------|---------------------|---------------------|----------|----------|------------------|----------|
+| 1    | Logistic Regression | TF-IDF (Char 2-5)   | 0.9966   | 0.9966   | 0.9959 ± 0.000   | 135.03   |
+| 2    | Random Forest       | TF-IDF (Char 2-5)   | 0.9873   | 0.9874   | 0.9889 ± 0.001   | 266.37   |
+| 3    | Logistic Regression | Count (1-2gram)     | 0.9790   | 0.9790   | 0.9791 ± 0.001   | 21.72    |
+| 4    | Logistic Regression | TF-IDF (1-3gram)    | 0.9789   | 0.9789   | 0.9774 ± 0.001   | 17.25    |
+| 5    | Logistic Regression | TF-IDF (1-2gram)    | 0.9773   | 0.9773   | 0.9757 ± 0.001   | 15.50    |
+| 6    | Random Forest       | TF-IDF (1-2gram)    | 0.9340   | 0.9336   | 0.9351 ± 0.002   | 22.90    |
+| 7    | Random Forest       | TF-IDF (1-3gram)    | 0.9332   | 0.9329   | 0.9322 ± 0.000   | 25.37    |
+| 8    | Naive Bayes         | TF-IDF (Char 2-5)   | 0.9331   | 0.9328   | 0.9341 ± 0.001   | 108.53   |
+| 9    | Random Forest       | Count (1-2gram)     | 0.9315   | 0.9312   | 0.9329 ± 0.001   | 30.64    |
+| 10   | Naive Bayes         | TF-IDF (1-3gram)    | 0.8689   | 0.8646   | 0.8640 ± 0.002   | 14.73    |
+
+---
+
+###  Best Performing Model
+
+```text
+Model     : Logistic Regression
+Vectorizer: TF-IDF (Character-level, 2–5)
+Accuracy  : 0.9966
+F1 Score  : 0.9966
+CV Score  : 0.9959 ± 0.000
 
 ---
 
