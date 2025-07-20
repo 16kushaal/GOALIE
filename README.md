@@ -73,7 +73,7 @@ Vectorizer: TF-IDF (Character-level, 2–5)
 Accuracy  : 0.9966
 F1 Score  : 0.9966
 CV Score  : 0.9959 ± 0.000
-
+```
 ---
 
 ## Setup Instructions
