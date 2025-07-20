@@ -6,7 +6,7 @@ GOALIE is a browser extension (designed for Chromium) that simulates real-time f
 
 ---
 
-## 🚀 Features
+##  Features
 
 * 🎮 **Live Match Simulation** with realistic minute-by-minute commentary (For Demostartion Purposes)
 * 💬 **AI-Generated Snippets** describing the current game state
@@ -17,7 +17,7 @@ GOALIE is a browser extension (designed for Chromium) that simulates real-time f
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 | Layer        | Technology                                                       |
 | ------------ | ---------------------------------------------------------------- |
@@ -29,7 +29,7 @@ GOALIE is a browser extension (designed for Chromium) that simulates real-time f
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the repository
 
@@ -65,7 +65,7 @@ Your API will be hosted at `http://127.0.0.1:5000/classify_and_log`
 
 ### 3. Frontend / Chrome Extension Setup
 
-#### 🧩 Load Extension
+#### Load Extension
 
 1. Open Chrome → `chrome://extensions`
 2. Enable **Developer Mode**
@@ -77,7 +77,7 @@ Your API will be hosted at `http://127.0.0.1:5000/classify_and_log`
 manifest.json
 ```
 
-#### 🔑 Insert Gemini API Key (Frontend)
+#### Insert Gemini API Key (Frontend)
 
 In `popup.js`, replace:
 
@@ -89,7 +89,7 @@ with your actual API key, or handle it through a proxy if sensitive.
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 FOOTBALL-SCORE-EXTENSION/
@@ -133,7 +133,7 @@ FOOTBALL-SCORE-EXTENSION/
 
 ---
 
-## 🧪 Demo Commentary Types
+## Demo Commentary Types
 
 ```json
 {
@@ -159,7 +159,7 @@ FOOTBALL-SCORE-EXTENSION/
 
 ---
 
-## 🧑‍💻 Author
+##  Author
 
 Made with ⚽ and 💻 by [@16kushaal](https://github.com/16kushaal)
 
