@@ -206,7 +206,7 @@ FOOTBALL-SCORE-EXTENSION/
 
 ---
 ###  Working Demo Video
-![Working Demo Video](model\results\Live-Extension-Football-Demo.mp4)
+![Working Demo Video](model/results/Live-Extension-Football-Demo.mp4)
 ---
 ##  Author
 
