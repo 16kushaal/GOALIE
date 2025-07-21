@@ -206,7 +206,7 @@ FOOTBALL-SCORE-EXTENSION/
 
 ---
 ###  Working Demo Video
-[![Watch the Demo Video](model/results/thumbnail.jpg)](https://www.youtube.com/watch?v=809OBu9fc6Q)
+[![Tap to watch the Demo Video](model/results/thumbnail.jpg)](https://www.youtube.com/watch?v=809OBu9fc6Q)
 
 ---
 ##  Author
