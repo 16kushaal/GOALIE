@@ -206,10 +206,8 @@ FOOTBALL-SCORE-EXTENSION/
 
 ---
 ###  Working Demo Video
-<video width="640" height="360" controls>
-  <source src="model/results/Live-Extension-Football-Demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[▶️ Watch Demo Video on YouTube](https://youtu.be/809OBu9fc6Q)
+
 ---
 ##  Author
 
