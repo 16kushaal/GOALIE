@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- CONFIGURATION ---
-    const GEMINI_API_KEY = 'ADD_YOUR_GEMINI_API_HERE'; // 🔥 IMPORTANT: Add your Gemini API key here
+    const GEMINI_API_KEY = 'ADD_GEMINI_API_KEY'; // 🔥 IMPORTANT: Add your Gemini API key here
     const FLASK_LOG_URL = 'http://127.0.0.1:5000/classify_and_log'; // URL to send commentary for logging
     const SIMULATION_SPEED_MS = 4500;
 
@@ -240,6 +240,406 @@ const MATCH_DATA = {
       "98": { "type": "commentary", "text": "FULL-TIME WHISTLE! IT’S OVER! MANCHESTER UNITED WIN THE DERBY!" },
       "99": { "type": "commentary", "text": "Final Score: Manchester United 1 – 0 Manchester City" },
       "100": { "type": "commentary", "text": "Onana: 10 saves, a wall. Man of the Match: Martínez or Onana? Toss-up. Old Trafford is shaking. The fans can barely believe what they’ve witnessed. 95 minutes of holding the line. Then one stroke of cold-blooded finishing. This wasn't just a derby. This was a war epic. A masterpiece." }
+    }
+  },
+  "barcelona_vs_real_madrid": {
+    "homeTeam": {
+      "name": "Barcelona",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
+    },
+    "awayTeam": {
+      "name": "Real Madrid",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+    },
+    "events": {
+      "0": {
+        "type": "commentary",
+        "text": "The stadium is thunderous! Flags wave like sea currents across a floodlit Camp Nou, packed to the brim with over 99,000 fans. Barcelona kick off from left to right in their iconic blaugrana, while Real Madrid, dressed in crisp white, are focused and statuesque in formation. Xavi is pacing nervously near the touchline; Ancelotti calmly chews gum with the nonchalance of a man who’s seen it all. The referee checks his watch... and we are LIVE! El Clásico has begun!"
+      },
+      "1": {
+        "type": "commentary",
+        "text": "Barcelona start with early possession. Christensen to Koundé, who looks up and lofts it toward João Cancelo on the left. He controls expertly with the outside of his boot and taps it into Gavi, who immediately turns under pressure from Camavinga. Gavi finds Pedri centrally—quick triangles forming. Madrid stay compact in a 4-4-2, with Bellingham pressing alongside Rodrygo. First tactical sparring, cautious but razor-sharp."
+      },
+      "2": {
+        "type": "commentary",
+        "text": "Real respond. Alaba to Mendy, who overlaps down the left and whips in a ball looking for Vinícius Jr, but Koundé reads it early and intercepts. Vinícius presses hard, forcing Koundé to clear hastily. Modrić collects the loose ball, dances past De Jong with a faint, and fires it across to Valverde on the right—Real stretch the pitch beautifully. This is what El Clásico is about: chess at 100mph."
+      },
+      "3": {
+        "type": "commentary",
+        "text": "Pressure from Real! Modrić plays it short to Bellingham, who drops deep, turns elegantly past Pedri, and floats a diagonal toward Rodrygo. Rodrygo chests it down, volleys into the box—but Ter Stegen is alert and gathers cleanly. Still no shots, but the tempo is ferocious. Barcelona looking for control; Madrid smelling blood with every transition."
+      },
+      "4": {
+        "type": "commentary",
+        "text": "Barcelona try to break. Cancelo, bold as ever, surges past Carvajal with a flick. He cuts inside, plays it centrally to Gavi, who swivels and releases a line-splitter to Lewandowski! He’s between Alaba and Rüdiger—takes a touch—shoots... BLOCKED! Rüdiger throws himself across like a wall of marble. The first roar of goal anticipation echoes—but Madrid survive."
+      },
+      "5": {
+        "type": "commentary",
+        "text": "Real Madrid come again. Valverde down the right, motors forward with that long stride, skips inside Balde and lays it off to Modrić, who fakes to shoot, then threads it into Bellingham at the edge of the D. One touch—he’s lining it up—GOES FOR GOAL! Just over! The ball brushes the top of the netting. Camp Nou exhales. The Englishman nearly struck first blood."
+      },
+      "6": {
+        "type": "commentary",
+        "text": "Barcelona regather and try to calm the storm. Ter Stegen plays short to Araújo. Calm as a glacier, he scans and pivots out of a light press from Vinícius Jr. He finds Koundé, who inverts centrally—Barça are inverting both fullbacks now! Cancelo and Balde are hugging touchlines while De Jong pulls the strings from deep. He drops between Christensen and Koundé—this is a classic Xavi control setup. Pedri receives between the lines—beautiful one-touch layoff to Gavi! Gavi surges into the final third—Lewandowski makes a diagonal run behind Rüdiger—Gavi threads it—but the pass is slightly overcooked. Courtois reads it and pounces on it like a panther. Still, lovely pattern from the home side. They’re starting to bite into the game’s rhythm."
+      },
+      "7": {
+        "type": "commentary",
+        "text": "Real Madrid reset with surgical calm. Modrić and Kroos—footballing aristocrats—exchange a quick triangle to beat Barça’s press. Kroos now with the ball—he scans—then delivers a vertical slicing ball between the lines—right into Bellingham’s stride! Bellingham turns, accelerates—Gavi chases but can’t catch him. He’s 25 yards out—feeds it to Vinícius on the left wing. Vini drops his shoulder—faints—cuts inside past Araújo—left footed curler! But Ter Stegen is equal to it! He dives right and punches it clear! The Camp Nou breathes a collective sigh—Vinícius almost lit the fuse."
+      },
+      "8": {
+        "type": "commentary",
+        "text": "Barcelona turn defence to attack with blinding pace. Balde collects the clearance and explodes up the left like a jet engine. Carvajal backpedals nervously. Gavi overlaps—Balde slips it to him—and Gavi with a stunning whipped ball across the face of goal—Raphinha arrives—volleys—OH IT SCRAPES THE POST! The far post rattles ever so slightly. So close! Courtois was motionless—he didn’t move an inch. Xavi claps furiously on the touchline, urging his team to keep going. We’ve got a classic on our hands!"
+      },
+      "9": {
+        "type": "commentary",
+        "text": "This is the kind of tempo that steals years off managers’ lives. Modrić again shows his genius—drops deep, draws two in, then threads a ball over the top—Vinícius is ON-SIDE! He races past Koundé—he’s in behind! Ter Stegen rushes out! Vinícius goes for the chip! OH MY WORD—JUST wide! He had the keeper beaten, but it skims the side netting! Vinícius can’t believe it—hands on head. Camp Nou roars to rally their side. Real Madrid nearly drew first blood again. We’re not even ten minutes in and it’s chaos—beautiful, orchestrated chaos."
+      },
+      "10": {
+        "type": "commentary",
+        "text": "Barcelona now lean into their positional play. De Jong takes control, dropping deep like a quarterback. He slides it to Christensen, who invites pressure before feeding Cancelo. Cancelo dribbles diagonally, slices inside Kroos—he opens his hips—what a pass to Raphinha through the channel! Raphinha chests it down and cuts into the box! Alaba meets him—Raphinha feints left, then right, hits the turbo—goes down! Huge shouts for a penalty!! Referee waves play on! VAR will surely have a look. The crowd is up in arms, baying for justice. Replay shows slight contact, but did Raphinha go down too easily? No VAR intervention… yet. And Real Madrid break the other way! Rodrygo accelerates, tearing down the right wing. He squares for Benzema—his first real touch in the final third—he spins, tries to play in Bellingham—but Araújo reads it and steps across with impeccable timing. What a player! The stadium chants his name like a war drum."
+      },
+      "11": {
+        "type": "commentary",
+        "text": "Still buzzing from that penalty shout, Barcelona slow it down to recalibrate. De Jong drops into the left half-space. He’s conducting the tempo like a maestro now—short pass to Gavi, back to De Jong, out to Koundé. Koundé lofts a switch diagonally across the pitch—Cancelo cushions it exquisitely on the run with his chest—he’s 1v1 with Carvajal—drops a shoulder—inside! Low shot near post! Saved by Courtois! Strong wrists from the Belgian. Real Madrid survive again."
+      },
+      "12": {
+        "type": "commentary",
+        "text": "Real Madrid probe carefully. Kroos delays—waits—and pierces a pass through the press to Modrić. The Croatian pivots like a ballet dancer, then flips a ball down the inside-left channel for Vinícius Jr. Again, Vinícius vs Araújo. What a duel this is. Vinícius tries a stepover… two… cuts in—Araújo sticks a toe in—clean! Brilliant tackle! Araújo turns defence into attack instantly. Off he goes charging upfield! Crowd absolutely erupts! He releases it wide to Raphinha—Barcelona counter! Raphinha finds Lewandowski at the top of the box—back to goal—he tries a backheel flick to Gavi arriving… intercepted by Alaba at full stretch. Electrifying football."
+      },
+      "13": {
+        "type": "commentary",
+        "text": "Barcelona turn the screw. Pedri and Gavi are now combining like gears in a watch. They run rings around Modrić and Camavinga. Gavi now goes on a slaloming run down the left—beats one—two—enters the box—cutback across goal!! No takers! The ball trickles agonizingly across the face of goal. Lewandowski was a half-step too late. Real Madrid breathe again. Xavi claps furiously. He knows a goal is coming if this continues."
+      },
+      "14": {
+        "type": "commentary",
+        "text": "Free kick Real Madrid—about 35 yards out. Kroos stands over it. He chips it toward the far post—Bellingham rises like a skyscraper—HEADS IT DOWN—Saved!! Ter Stegen gets down quickly and clutches it! Big save! Barcelona fans whistle in appreciation of their keeper. Bellingham is proving to be a nightmare in those late runs into the box. He’s everywhere."
+      },
+      "15": {
+        "type": "score",
+        "team": "home",
+        "scorer": "Lewandowski",
+        "newScore": [
+          1,
+          0
+        ],
+        "text": "GOOOOOOAAAAAAAL!!! BARCELONA 1–0 REAL MADRID!!! It’s LEWANDOWSKI!!! The Camp Nou ERUPTS into a frenzy!! Pedri starts it all. He glides past Camavinga in midfield—elegant as ever—and slides a dagger ball into Lewandowski at the edge of the D. He turns ALABA inside out with one move and rifles it low into the bottom-left corner! Courtois is beaten! Pure instinct. Pure class. Xavi leaps into the air on the sideline—fists pumping! The crowd is a wall of sound! That was clinical. El Clásico has its first goal!"
+      },
+      "16": {
+        "type": "commentary",
+        "text": "Real Madrid try to respond. Modrić, Valverde, and Kroos form a triangle—tempo picks up. They’re pushing high now. Valverde threads it through to Rodrygo—good first touch—he’s in the box! SHOOTS—BLOCKED by Christensen! Sacrifices his body! Corner Madrid. Kroos jogs over. Near-post delivery—cleared by De Jong—but only as far as Modrić—volley on the bounce—WIDE! Just inches wide. That was hit with venom."
+      },
+      "17": {
+        "type": "commentary",
+        "text": "Barcelona drop slightly, looking to lure Madrid forward. Ter Stegen plays short to Koundé. Madrid press in numbers—Rodrygo and Vini press high—but Barça work their way out with a gorgeous 8-pass sequence. Cancelo bursts into midfield, skips past Camavinga, and releases Balde. Balde tears down the left. Cross comes in—headed away by Rüdiger—but only as far as Pedri—he volleys it FIRST TIME—blocked again! It’s end-to-end, breathtaking football."
+      },
+      "18": {
+        "type": "commentary",
+        "text": "Vinícius Jr gets a yellow! Oh it’s boiling now! He lunges in hard on Araújo near the sideline. Studs up—not malicious, but late. The crowd lets him hear it. Araújo gets up quickly though, composed as ever. Referee lays down the law. That’s the first booking of the night—and it had been coming. Tempers starting to rise."
+      },
+      "19": {
+        "type": "commentary",
+        "text": "Barcelona holding onto the ball now—De Jong orchestrating from deep, with Pedri and Gavi interchanging positions constantly. Raphinha has come slightly inside, operating in the half-space—he receives from Cancelo and turns—he’s got Lewandowski peeling wide! Raphinha plays a curling ball toward the far post—Lewandowski meets it with a diving header! JUST WIDE! Inches! Courtois was rooted. Lewa looks up, frustrated. That could’ve been his brace."
+      },
+      "20": {
+        "type": "commentary",
+        "text": "Free kick for Barcelona—35 yards out, left of center. Pedri stands over it. He lifts it toward the penalty spot—Araújo rises—beaten in the air by Rüdiger. But it falls to Gavi outside the box—he strikes it low! DEFLECTED! Corner Barcelona! The stadium is whistling with anticipation now. Every attack feels like it could be a goal. The volume is deafening."
+      },
+      "21": {
+        "type": "commentary",
+        "text": "Barcelona corner—Raphinha swings it in—Lewandowski goes for it—misses—but the ball falls to Christensen at the back post! Hooks it back across goal—cleared by Alaba on the line!! Unbelievable! Madrid hanging on. Ancelotti is barking instructions now, demanding shape and composure."
+      },
+      "22": {
+        "type": "commentary",
+        "text": "Sudden counterattack! Vinícius Jr sprints down the left after a sharp ball from Kroos. He’s isolated with Koundé—cuts inside—plays in Bellingham on the overlap—shot across goal—Ter Stegen gets a fingertip to it! Corner! The white shirts surge forward. Kroos swings it in—Alaba heads—just over! Ter Stegen stretches but watches it fly over the bar."
+      },
+      "23": {
+        "type": "commentary",
+        "text": "Barcelona survive and control returns. Pedri receives between the lines again—brilliant vision—he plays a blind reverse ball through for Raphinha—OH what a pass! Raphinha’s first touch takes him wide—he drills it across goal… cut out by Courtois at full stretch! End-to-end. Tactically intricate. Emotionally wild. It’s everything a Clásico should be."
+      },
+      "24": {
+        "type": "commentary",
+        "text": "Free kick Real Madrid—Camavinga fouled by Pedri. Kroos floats it high into the box—Rüdiger heads it back across—Rodrygo tries the overhead kick! Spectacular effort—but it loops just over the bar! Ter Stegen was stranded! Oooohs ripple through the crowd. That was nearly one for the ages."
+      },
+      "25": {
+        "type": "commentary",
+        "text": "Barcelona slow it down. Frenkie De Jong plays a wonderful disguised pass out wide to Cancelo. The fullback drives infield, skips past Kroos, and lays it off to Gavi. Gavi tries a quick one-two with Lewandowski—intercepted by Alaba. But the second ball drops to Pedri again—quick shot—deflected! Courtois scrambles but it goes just wide for another corner. The home side is relentless."
+      },
+      "26": {
+        "type": "score",
+        "team": "home",
+        "scorer": "Gavi",
+        "newScore": [
+          2,
+          0
+        ],
+        "text": "GOOOOOAL! 2–0 BARCELONA!!! IT’S GAVI! From the corner! Raphinha curls it deep—Araújo knocks it back across goal—Gavi arrives late, unmarked—and volleys it past Courtois from 7 yards! The stadium goes MAD! Gavi wheels away, arms outstretched, veins bursting with passion! Xavi is losing it on the sideline—hugging staff—roaring to the heavens! What a moment for the young Spaniard! It’s 2–0 to Barça and Real Madrid are shell-shocked!"
+      },
+      "27": {
+        "type": "commentary",
+        "text": "Real Madrid are rattled. Ancelotti calls Rodrygo and Valverde over—clear tactical tweaks incoming. Vinícius tries to make something happen—he receives on the left—drives at Koundé—dances, jinks, goes left—shoots low—Ter Stegen saves again! He’s been unbeatable tonight."
+      },
+      "28": {
+        "type": "commentary",
+        "text": "Barcelona now smell blood. Pedri dances through midfield like a ghost. He nutmegs Camavinga—OLÉÉÉÉÉ echoes across Camp Nou! He then releases Balde down the wing. The fullback whips it low across the six-yard box—just evades Lewandowski! So close to a third."
+      },
+      "29": {
+        "type": "commentary",
+        "text": "Modrić tries to lift Madrid. He drops deep, demands the ball, and accelerates. He sends it out to Rodrygo on the right. Rodrygo drives, cuts in, fires one—deflected! Corner Madrid. Kroos to take again. It’s a short routine—Modrić crosses—Rüdiger attacks it—header!! Saved by Ter Stegen again! He’s a wall!"
+      },
+      "30": {
+        "type": "commentary",
+        "text": "Half an hour gone. It’s been a whirlwind. Barcelona lead 2–0. They’ve been dominant in midfield, ruthless in the final third, and heroic at the back. But this is Real Madrid—they’ve come back from worse. Ancelotti looks deep in thought. Substitutions warming. Tactical recalibration is imminent."
+      },
+      "31": {
+        "type": "commentary",
+        "text": "The tempo hasn’t dropped an inch. Pedri receives a slick diagonal from Koundé and glides between Valverde and Kroos with such fluidity it draws gasps from the crowd. He slips a quick one-two with Gündoğan, who’s popped up in the left channel—Gundo drags Carvajal out of shape, and it opens space centrally. Lewandowski drops deep to collect, flicks it behind his standing leg—brilliant flair—but Nacho reads it and clears with urgency. It’s football with the brakes off."
+      },
+      "32": {
+        "type": "commentary",
+        "text": "Real Madrid now trying to regain composure. Tchouaméni, calm as ever, turns under pressure from Félix and spreads it to Mendy. Mendy surges forward—outpaces Araújo momentarily—but just as he’s about to release it, Koundé tracks back and intercepts. Crucial intervention. Barça fans chant his name from the rafters—KOUN-DÉ! KOUN-DÉ! It’s electric."
+      },
+      "33": {
+        "type": "commentary",
+        "text": "Barça back on the prowl. De Jong is now dictating from deep, orchestrating with his head constantly swiveling. He sees Gavi’s diagonal run into the right half-space and picks him out with a slicing ball. Gavi controls with one foot, drags with the other, and leaves Camavinga in his wake! Cross into the six-yard box—Lewandowski rises! But Lunin punches clear, brave keeping from the Ukrainian!"
+      },
+      "34": {
+        "type": "commentary",
+        "text": "The rebound falls to Balde, 30 yards from goal. He has options, but no—he goes for it! A thunderous left-footed volley! It dips viciously and Lunin has to parry it again! Real Madrid hanging on for dear life right now. Barça smell blood, and Camp Nou is at full volume."
+      },
+      "35": {
+        "type": "commentary",
+        "text": "Real attempt to slow the momentum. Kroos and Modrić work the ball between themselves, Modrić using that trademark turn to shake off Gavi. He drives forward now—still has that burst of acceleration—and plays a reverse ball to Vinícius Jr. Vini’s in behind Koundé! The flag stays down—1v1—SHOOTS! Ter Stegen saves with his leg! MASSIVE moment! Offside goes up late—but still—what a save."
+      },
+      "36": {
+        "type": "commentary",
+        "text": "That scare jolts Barça back into rhythm. Gündoğan links with Pedri again—those two are like jazz musicians riffing in real-time. Quick exchanges, one-touch stuff, until Gündoğan flicks it over the top! Félix chases—volleys it first-time across goal—but Lewandowski can’t get the final touch. Inches away from a goal of the season contender!"
+      },
+      "37": {
+        "type": "commentary",
+        "text": "Now it's end-to-end. Valverde picks up the pieces for Madrid and drives through midfield like a freight train. He ignores the crowd noise and cuts it square to Rodrygo. Rodrygo opens his body—goes for the curler! Just over! Ter Stegen was at full stretch but always had his eye on it."
+      },
+      "38": {
+        "type": "commentary",
+        "text": "Tension now turning into intensity. Fouls creeping in. Gavi and Camavinga clash in midfield—Gavi leaves a little something in there—Camavinga retaliates. Players swarm. Ref steps in quickly, diffuses it. No cards, but the warning is loud and clear. This is El Clásico, and the needle is always sharp."
+      },
+      "39": {
+        "type": "commentary",
+        "text": "Barça free kick. Around 35 yards out. Gündoğan stands over it, arms outstretched like a conductor. He floats it to the far post—Lewandowski peels off Nacho—heads it back across goal! Gavi dives in! But Lunin gathers just before Gavi can connect. Courage from the keeper again. What a performance he’s putting on."
+      },
+      "40": {
+        "type": "commentary",
+        "text": "Real Madrid try the direct route now. Tchouaméni floats a 40-yard ball over the top for Vini Jr., who chests it perfectly and blazes past Araújo! But the angle’s tight—he cuts it back—and no one’s there again! Valverde was late to arrive. Another golden chance goes begging for Los Blancos."
+      },
+      "41": {
+        "type": "commentary",
+        "text": "Pedri wins it back. This kid is silk and steel combined. He slows the game with delicate touches, then suddenly drives past Modrić with a drop of the shoulder. He lays it to Lewandowski who—wait—heel-flicks it to Gavi! One-touch pass to Félix—he’s in! Low shot—SAVED! Unbelievable sequence. Barça are dancing in triangles!"
+      },
+      "42": {
+        "type": "commentary",
+        "text": "Corner for Barça. Gündoğan takes. It’s a low-driven effort—deception! Gavi meets it at the near post—glances it! JUST wide! It was a clever routine straight from the training ground. The Real defence didn’t react in time."
+      },
+      "43": {
+        "type": "commentary",
+        "text": "Modrić takes command again. Little pirouette, and then picks out Carvajal making a blindside run. Cross into the box—Rodrygo attacks it—but Araújo slides in, heroic block! Real appeal for a foul—nothing doing. Araújo gets up roaring like a lion!"
+      },
+      "44": {
+        "type": "commentary",
+        "text": "Tchouaméni is trying to stamp his authority, breaking up play and starting transitions. But every time he does, De Jong or Pedri are there to counter-press. It’s like watching synchronized swimming—Barça always seem to have a spare man."
+      },
+      "45": {
+        "type": "commentary",
+        "text": "Approaching the break. Gündoğan makes one more surge—sidesteps Modrić, nutmegs Kroos—passes to Félix on the edge of the box—he tries a no-look shot! Deflected! Over the bar! The Camp Nou crowd rises in unison—Sí se puede! they chant. Two added minutes. Barça continue to probe. Balde sprints down the flank, gets past Carvajal, delivers early to Lewandowski! He shoots—LUNIN SAVES AGAIN! He is having the game of his life! And there’s the halftime whistle! A breathless first half ends 0–0, but don’t let the scoreline fool you—this has been a heavyweight brawl disguised as a ballet. Lunin and Ter Stegen both exceptional. Barça slightly edging possession and chances. Real dangerous in transition. Second half promises fireworks."
+      },
+      "46": {
+        "type": "commentary",
+        "text": "And we’re back under the Catalan skies! Barça instantly on the front foot. Gündoğan drifts wide to overload the left with Balde. Quick one-two—they drag Carvajal and Valverde out, and now Gavi darts into the vacated half-space. Gündoğan plays it into him—Gavi squares across the box—Lewandowski! SHOOTS! Blocked by Nacho! It pinballs back to Félix—tries a rabona cross—headed away! Real Madrid survive by inches, again!"
+      },
+      "47": {
+        "type": "commentary",
+        "text": "Real Madrid respond with a fluid phase. Modrić drops deep beside Tchouaméni—Kroos drifts out wide left to form a diamond. Suddenly Rodrygo tucks inside and it’s Vinícius wide. The ball zips from Kroos to Modrić to Valverde—he clips it over the top for Vini Jr.! He’s in behind—low cross to Rodrygo! MISS-HIT! Right into Ter Stegen’s gloves! The execution just didn’t match the build-up."
+      },
+      "48": {
+        "type": "commentary",
+        "text": "Pedri, like a puppeteer, keeps Barça ticking. He feints right, goes left, shrugs off Camavinga. The whole stadium oohs. He picks out a beautiful vertical line-breaking pass straight into Félix between the lines. Félix drops deep, drags Rüdiger out, and that opens a diagonal to Lewandowski—he turns! SHOOTS! Lunin AGAIN!! Stretches low to his right! Barça can’t believe this keeper!"
+      },
+      "49": {
+        "type": "commentary",
+        "text": "Set-piece Barcelona. Gündoğan over the corner again—right-footed inswinger to the back post. Araújo out-jumps everyone! It’s looping! CLEARED OFF THE LINE BY KROOS! Extraordinary defensive awareness! The German is calm as ever, just nodding it away under pressure."
+      },
+      "50": {
+        "type": "commentary",
+        "text": "Tempers beginning to simmer. Félix gets clipped by Tchouaméni in the middle—ref waves advantage. Gavi storms in, puts a crunching challenge on Modrić. Now Madrid are protesting. Vinícius runs over, finger-pointing. Gavi barks back. The referee, cool under pressure, calls both over. Just a stern warning this time, but it’s boiling."
+      },
+      "51": {
+        "type": "commentary",
+        "text": "Free kick Madrid. 35 yards out—Kroos floats it into the corridor of uncertainty. Rüdiger attacks it with menace—header! Inches over the crossbar! Ter Stegen was rooted. You could hear the net ripple in the fans’ imagination."
+      },
+      "52": {
+        "type": "commentary",
+        "text": "Barça slow it down. De Jong orchestrating from deep again. He steps between the centre-backs in that Busquets role. Real hesitate—Gavi sprints between lines. De Jong finds him. Touch—pass to Pedri—first-time scoop to Balde! Cross from the byline—Félix with a diving header! SIDE-NETTING! Half the crowd thought it was in!"
+      },
+      "53": {
+        "type": "commentary",
+        "text": "Substitution incoming for Real Madrid. Camavinga comes off—looked a bit leggy—and in comes Jude Bellingham to a wave of boos from the home crowd and applause from traveling fans. That changes the midfield dynamic entirely."
+      },
+      "54": {
+        "type": "commentary",
+        "text": "Bellingham makes his presence known immediately. Drops deep to receive from Kroos, shields from Gavi, swivels, and then drives forward. He skips past Pedri and plays a perfectly timed ball to Vinícius on the edge of the area. Vini chops inside Araújo—GOES NEAR POST! Ter Stegen, hand of steel! Parried away. Bellingham applauds him—Vini’s confidence is soaring."
+      },
+      "55": {
+        "type": "commentary",
+        "text": "Still no breakthrough but you can feel it coming. Every touch is electric. Gavi breaks the lines again, dances past Bellingham—yes, past Bellingham—and plays in Félix. He holds it up, waits for support, flicks it to Gündoğan who arrives late—CRACKS IT! OFF THE CROSSBAR!! The woodwork is trembling! Lunin was beaten! Inches away from the opener!"
+      },
+      "56": {
+        "type": "commentary",
+        "text": "Crowd now firmly the twelfth man. Camp Nou is a cauldron of chants, bouncing up and down in unity. Barça are feeding off it. Balde pushes forward again. One-two with Gavi—slides across goal—Lewandowski tries the flick! BLOCKED! Rebound to Pedri! LASER SHOT! Saved by Lunin! He’s in god mode!"
+      },
+      "57": {
+        "type": "commentary",
+        "text": "Modrić turns into space, Real shift gears again. Bellingham picks up the second ball and glides forward like he’s on ice skates. Plays a give-and-go with Valverde, makes it to the edge of the D—shoots with power! But Ter Stegen reads it, dives low, holds. End-to-end doesn’t even begin to describe this."
+      },
+      "58": {
+        "type": "commentary",
+        "text": "Barça now add muscle to midfield. Sub incoming—Ferran Torres comes on for Félix. Fresh legs out wide, more pressing intensity. Xavi looks animated, barking tactical adjustments. Ferran instantly presses Rüdiger into a long ball and Barça regain possession high. The crowd rewards that hustle with thunderous applause."
+      },
+      "59": {
+        "type": "commentary",
+        "text": "Pedri finds Ferran on the right touchline—1v1 with Mendy—he feints, chops inside, curls one toward the back post—LEWANDOWSKI IS THERE! But so is Nacho! What a duel! Nacho stretches every ligament to nick it away for a corner. He screams and pumps his fist. He knows how vital that interception was."
+      },
+      "60": {
+        "type": "commentary",
+        "text": "Corner Barça. Gündoğan whips it—Araújo meets it FULL HEAD! Cleared off the line AGAIN by Valverde! That’s twice Madrid have denied goals by millimeters. Barça fans are in disbelief. Real Madrid fans are on edge. We’ve reached the hour mark and it’s STILL 0-0—somehow. But what a battle, what a match."
+      },
+      "61": {
+        "type": "commentary",
+        "text": "Barcelona pressing high again! Lewandowski sprints to close down Courtois—forces a hurried clearance! It drops near midfield—Gavi wins the aerial duel against Modrić! That’s hunger! He pokes it forward—João Félix is on it! Twists past Nacho with a burst! Into the box—lays it to Lewandowski—first-time hit! BLOCKED by Rüdiger! That’s a goal-saving block! Ball ricochets high—De Jong goes up for it—but Tchouaméni heads clear under pressure! The rhythm won’t let up!"
+      },
+      "62": {
+        "type": "commentary",
+        "text": "Real Madrid now slow the tempo, trying to breathe. Kroos directs traffic, pointing where he wants the run. He plays it short to Camavinga—Camavinga drives into space like a silent bullet—beats Gündoğan with a drop of the shoulder! Slips it wide to Valverde—who crosses early! Vini Jr is there! Tries to volley it! But Koundé leans into him just enough—Vini slices it wide! And he’s screaming for a penalty—referee unmoved!"
+      },
+      "63": {
+        "type": "commentary",
+        "text": "Xavi is animated—gesturing for Gavi to tuck inside when Madrid have the ball. Tactical adjustment—Barcelona transitioning into a narrow 4-2-2-2 when pressing. It’s working! Gavi and Gündoğan squeeze Modrić into a mistake! Turnover! Quick pass to Pedri—he’s galloping forward—slots it to Lewandowski at the edge—lays it off to Félix! Shoots! Straight into Courtois’ chest! But the build-up was electric!"
+      },
+      "64": {
+        "type": "commentary",
+        "text": "Real regain possession, this time building methodically. Kroos to Modrić—Madrid rotate the triangle—Carvajal overlaps—Modrić feeds him—Carvajal low cross into the six-yard box—Vini Jr slides! Ter Stegen parries! Chaos! Ball spills loose! Valverde THUMPS IT! BLOCKED BY ARAUJO ON THE LINE! OH MY WORD! That’s commitment! Ter Stegen gets up roaring with gratitude!"
+      },
+      "65": {
+        "type": "commentary",
+        "text": "The tension is crackling now. Foul by Gavi on Camavinga near the halfway line—quick free kick taken—Madrid go direct! Rüdiger launches one over the top for Rodrygo—he’s in a footrace with Balde! Rodrygo edges ahead—gets the touch! Into the box! Ter Stegen rushes out! Rodrygo tries to chip him—Ter Stegen SAVES with his shoulder! Outstanding! That could’ve been the moment!"
+      },
+      "66": {
+        "type": "commentary",
+        "text": "Barcelona push back. Araujo pings a laser to Pedri who controls it with a magnetic touch. He turns—spots the overlapping Balde—feeds him perfectly down the left wing. Balde whips it early—Félix dummies—Gavi arrives late—SHOT! GRAZES THE POST! The Camp Nou groans! So, so close!"
+      },
+      "67": {
+        "type": "commentary",
+        "text": "Substitution for Real Madrid: Modrić comes off to raucous applause from the away end. In comes Jude Bellingham, fresh and dangerous. An immediate buzz. You just feel like he’s going to be decisive. Xavi calls Ferran Torres over—he’s getting ready too. It’s a chess match now."
+      },
+      "68": {
+        "type": "commentary",
+        "text": "Bellingham already asserting himself. First touch—takes it on the turn—flicks it behind De Jong—oh that’s smooth! Drives forward! Lays it to Rodrygo who cuts inside on his left—curler! Just wide! But Real Madrid fans erupt at Bellingham’s composure. What an introduction!"
+      },
+      "69": {
+        "type": "commentary",
+        "text": "Barcelona counter directly! From the goal kick—Pedri flicks it to Félix, he’s drifting inside more now—plays a sublime diagonal to Lewandowski—he chests it down between the center-backs! On his left! SHOOTS—Courtois SAVES low with one hand! That’s elite goalkeeping under pressure!"
+      },
+      "70": {
+        "type": "commentary",
+        "text": "Seventy minutes in and we are still goalless, but it’s a miracle! It’s been a masterclass in defending, pressing, shot-stopping—every player is drenched in sweat, giving everything. The managers look like they’ve aged five years. This is El Clásico warfare—without the goals, but with every other ingredient turned to eleven."
+      },
+      "71": {
+        "type": "commentary",
+        "text": "Real Madrid with a long spell of possession now—Bellingham, Kroos, and Tchouaméni are rotating in elegant symmetry. Barcelona sit deep—a rare low block. Vini Jr dances at the edge—tries a one-two with Camavinga—it comes off! Vini Jr shoots from a tight angle—into the side netting! Half the stadium thought it was in!"
+      },
+      "72": {
+        "type": "commentary",
+        "text": "Barcelona substitutions: Ferran Torres replaces João Félix; Oriol Romeu comes on for Gavi. Xavi adding fresh legs, more stability. He’s shuffling the midfield lines—De Jong sits deeper, allowing Pedri to roam closer to Lewandowski. New shape, new spark?"
+      },
+      "73": {
+        "type": "commentary",
+        "text": "Barcelona recycle possession now—Romeu anchoring, plays it to De Jong, who splits the press with a disguised pass to Pedri. Pedri! Flicks it behind Nacho! Ferran Torres is through! One-on-one! SHOOTS—OFF THE POST! Oh my word! Inches! The net was ready to ripple!"
+      },
+      "74": {
+        "type": "commentary",
+        "text": "Real counter at breakneck pace. Vini Jr, now hugging the left touchline, receives from Valverde—dribbles inside—past two—feeds Bellingham at the arc—he lets it roll across his body—curls it! OH JUST OVER! The net bulged... from the wind! Unreal technique!"
+      },
+      "75": {
+        "type": "commentary",
+        "text": "Fifteen minutes left. The tension is unbearable. Every pass, every dribble, every tackle feels like a moment of destiny. The benches are up, fans biting nails, flags waving violently in the Catalan breeze. Neither side blinking. It’s a matter of will now."
+      },
+      "76": {
+        "type": "commentary",
+        "text": "Real Madrid building with surgical patience again. Tchouaméni steps into midfield like a conductor—slides it to Carvajal who’s got space—early ball across—deflected! Bellingham arrives! Swipes it! Ter Stegen saves again! And screams at his defense! That’s his seventh save tonight. He’s been a wall!"
+      },
+      "77": {
+        "type": "commentary",
+        "text": "Barcelona regain some rhythm. De Jong finds Balde again—deep cross this time—Lewandowski rises! Header! Saved AGAIN by Courtois! But the flag goes up late—offside. Still, the quality of delivery and timing is giving Madrid headaches."
+      },
+      "78": {
+        "type": "commentary",
+        "text": "Koundé intercepts a through ball and surges forward like a steam train—beats two—passes to Torres—Torres flicks it beautifully to Pedri—he’s at the edge! SHOOTS—BLOCKED by Rüdiger—falls to Lewandowski! Tries the overhead kick—JUST OVER! Daring! Camp Nou explodes in appreciation."
+      },
+      "79": {
+        "type": "commentary",
+        "text": "Corner to Barça—Pedri to take it—outswinger—Araujo towers over everyone—heads it! Cleared off the line by Tchouaméni! That was in! No VAR call yet—it might have just stayed out! Every inch is being contested like a final!"
+      },
+      "80": {
+        "type": "commentary",
+        "text": "Real Madrid on the counter! Rodrygo sprints 50 yards after a lofted Kroos pass—he’s isolated against Balde—chops inside—goes down! Referee says NO PENALTY! And it’s mayhem! Madrid bench is furious! Replay shows minimal contact—was it enough? It’s El Clásico—controversy is tradition!"
+      },
+      "81": {
+        "type": "commentary",
+        "text": "The game is at fever pitch now. Barça are throwing everything forward. Araújo steps into midfield—an auxiliary midfielder now. De Jong orchestrates from deep—finds Gündoğan, who threads an inch-perfect ball to Balde darting behind Carvajal! Balde’s touch is exquisite—cuts it back to Lewandowski! STRIKES—DEFLECTED—SCREAMS WIDE! Corner! Lunin was rooted! That deflection from Nacho possibly saved a goal!"
+      },
+      "82": {
+        "type": "commentary",
+        "text": "Corner Barcelona. Camp Nou is a wall of noise. Gündoğan raises one hand—signals the set play. Outswinger… flicked on by Ferran at the near post—PEDRI ARRIVES! BANG! BLOCKED BY BELLINGHAM! What a defensive intervention! Jude throws his whole body on the line. Madrid fans erupt in appreciation!"
+      },
+      "83": {
+        "type": "commentary",
+        "text": "Real Madrid with rare breathing space now. Modrić slows it down, keeps possession under Barça’s suffocating press. Bellingham drifts left, linking up with Vinícius—he holds Araújo off—nutmegs him! Oh, the audacity! He’s galloping forward into the box—cuts onto his right—shoots… TER STEGEN SAVES! Glorious solo run by Vini Jr.!"
+      },
+      "84": {
+        "type": "commentary",
+        "text": "Barça counter with velocity. Gavi snatches the loose ball, explodes forward, shrugging off Valverde. He spreads it wide—Ferran Torres races down the right—low cross across the box—NO ONE THERE! Just too far for Lewandowski. Gündoğan chases but Real regain. Inches separating agony and ecstasy."
+      },
+      "85": {
+        "type": "commentary",
+        "text": "SUBSTITUTION BARCELONA: Sergi Roberto comes on for Gavi—who gets a standing ovation for a warrior’s shift. Xavi opting for fresh legs and perhaps some control. Gavi taps the crest as he walks off, mouthing ‘Let’s go’ to the fans. He knows this is far from done."
+      },
+      "86": {
+        "type": "commentary",
+        "text": "Barça push higher. It’s wave after wave. De Jong with a sharp diagonal—Ferran heads it down—Pedri, in the pocket, opens his body and curls it toward the top corner! IT’S DIPPING—WHAT A SAVE FROM LUNIN! Full stretch to his left! That’s world-class! This man is singlehandedly holding Madrid together!"
+      },
+      "87": {
+        "type": "commentary",
+        "text": "Madrid clear and break! Vinícius again—a blur on the left—cuts infield. Araújo commits—misses! Vini’s through! 2v1 with Rodrygo—Vini to Rodrygo—back to Vini! DUMMIES TER STEGEN! OPEN GOAL—BLOCKED BY KOUNDÉ!! ABSOLUTE HEROICS! Koundé saves Barcelona from catastrophe! Camp Nou collectively exhales."
+      },
+      "88": {
+        "type": "commentary",
+        "text": "The clock is ticking, but there’s no let-up. Lewandowski drops deep, flicks one to Pedri—Pedri dinks it over the top—Balde on the left—drives to the byline—crosses—FERRAN HEADER!! JUST OVER THE BAR! He holds his head. He knows that could’ve been it. The margin is microscopic."
+      },
+      "89": {
+        "type": "commentary",
+        "text": "SUBSTITUTION MADRID: Modrić off, Dani Ceballos on. Modrić is applauded even by a few Barça fans—such is the respect. An absolute general tonight. Madrid now tightening midfield, trying to see this out or strike on the break."
+      },
+      "90": {
+        "type": "commentary",
+        "text": "Six minutes added on! SIX! And deservedly so—it’s been a maelstrom of action. The intensity has not dropped for a second. Xavi’s on the edge of his technical area, gesturing frantically. Ancelotti, arms folded, whispering to Ceballos as he presses high."
+      },
+      "91": {
+        "type": "commentary",
+        "text": "Barça attack again. Sergi Roberto slides into the channel—he’s in behind Mendy—low cross—DEFLECTED—loops high—Lewandowski meets it with a bicycle kick! OHHHHH! JUST OVER! He tried the spectacular! And it wasn’t far away. Lewandowski has the audacity, even in the 91st minute."
+      },
+      "92": {
+        "type": "commentary",
+        "text": "Madrid try to kill the game with possession. Kroos slows it down—passes back to Rüdiger—long ball to Rodrygo—chests it down—Koundé nips in! Clean! Now it’s end-to-end again. De Jong bursts forward—draws three Madrid players—slides it left to Pedri. Pedri to Ferran—CUT INSIDE—shoots—NACHO BLOCKS! Throws himself like a missile!"
+      },
+      "93": {
+        "type": "commentary",
+        "text": "Back come Madrid! Vinícius wide left, skips past Sergi Roberto, lays it to Bellingham at the edge of the D. Jude takes a breath, shifts, SHOOTS—DEVIATED! CORNER! Ter Stegen had dived the wrong way, but the deflection off Christensen took it wide! Real’s bench thought that was in!"
+      }
     }
   }
 };
