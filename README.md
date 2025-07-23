@@ -205,6 +205,33 @@ FOOTBALL-SCORE-EXTENSION/
 * [ ] Dockerize backend for production deployment
 
 ---
+### How to run it
+#### 1️⃣ Clone the Repository (if not already)
+```bash
+git clone https://github.com/16kushaal/GOALIE-Live-Sports-Extension
+cd GOALIE-Live-Sports-Extension
+```
+#### 2️⃣ Create and Activate Virtual Environment
+#### 3️⃣ Install Required Python Packages
+```bash
+pip install -r requirements.txt
+```
+#### 4️⃣ Download spaCy Model
+```bash
+python -m spacy download en_core_web_sm
+```
+#### 5️⃣ Configure Environment Variables
+Create a .env file in your root directory and add the following:
+```bash
+GRADIO_SPACE=<your_gradio_space_url>
+HF_TOKEN=<your_huggingface_token>
+```
+#### 6️⃣ Run the Server
+```bash
+python app.py
+```
+#### 
+---
 ###  Working Demo Video
 [![Tap to watch the Demo Video](model/results/thumbnail.jpg)](https://www.youtube.com/watch?v=809OBu9fc6Q)
 
